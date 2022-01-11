@@ -56,8 +56,11 @@ main {
     flex-basis: 200px;
 }
 
-#avaluation {
-    
+#textarea {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
 }
 
 #trybewarts-forms-logo {

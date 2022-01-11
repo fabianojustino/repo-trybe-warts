@@ -40,3 +40,16 @@ function fillRate () {
 }
 
 fillRate();
+
+const submitButton = document.getElementById('submit-btn');
+const inputAgree = document.getElementById('agreement');
+
+function enableButton (event) {
+    let element = event.target;
+    if(element.checked) {
+        submitButton.removeAttribute('disabled');
+    }
+}
+
+inputAgree.addEventListener('change', enableButton);
+
