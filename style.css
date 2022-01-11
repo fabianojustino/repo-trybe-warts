@@ -17,6 +17,7 @@ main {
     display: flex;
     justify-content: center;
     background-color: royalblue;
+    flex-direction: column;
 }
 #evaluation-form  {
     display: flex;
@@ -31,6 +32,13 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     width: 400px;
+}
+
+#family {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
 }
 
 
