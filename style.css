@@ -7,6 +7,10 @@
     display: flex;
 }
 
+#container {
+    display: flex;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -16,4 +20,8 @@ main {
     width: 675px;
     border: 2px solid red;
     flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+    height: 500px;
 }
