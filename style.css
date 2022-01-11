@@ -34,6 +34,14 @@ main {
     width: 400px;
 }
 
+#check-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
 #family {
     display: flex;
     flex-wrap: wrap;
@@ -41,6 +49,16 @@ main {
 
 }
 
+#learn-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 200px;
+}
+
+#avaluation {
+    
+}
 
 #trybewarts-forms-logo {
     height: 500px;

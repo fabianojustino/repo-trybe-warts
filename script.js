@@ -13,4 +13,30 @@ function checkin() {
 btnLogin.addEventListener('click', checkin)
 
 
+const avaluation = document.getElementById('avaluation');
 
+function fillRate () {
+    for (let i = 1; i < 11; i+=1) {
+        const radio = document.createElement('input');
+        radio.setAttribute('type', 'radio');
+        radio.name = 'rate';
+        radio.value = i;
+        radio.id = i;
+
+        const label = document.createElement('label');
+
+        label.htmlFor = i;
+
+        const description = document.createTextNode(i);
+        
+
+        label.appendChild(description);
+        label.appendChild(radio);
+
+        avaluation.appendChild(label);
+        
+        
+    }
+}
+
+fillRate();
