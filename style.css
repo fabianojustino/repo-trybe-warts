@@ -47,6 +47,7 @@ button {
   display: flex;
   background-color: #e7ecef;
   justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -146,6 +147,7 @@ flex-direction: column;
 #trybewarts-forms-logo {
   height: 500px;
   width: 100%;
+  display: flex;
 }
 
 
