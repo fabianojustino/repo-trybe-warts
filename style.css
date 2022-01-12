@@ -45,13 +45,14 @@ button {
 
 #container {
   display: flex;
-  background-color: yellow;
+  background-color: #e7ecef;
   justify-content: center;
 }
 
 main {
   display: flex;
   flex-flow: column;
+  padding: 10px;
 }
 
 #evaluation-form {
@@ -59,45 +60,60 @@ main {
   display: flex;
   justify-content: center;
   flex-flow: column;
-  background-color: green;
   margin: 10px 50px;
   padding: 10px;
 }
-
 
 #form-user {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 10px;
 }
 
-#form-user input, select{
+hr {
+  margin: 20px 0px;
+  width: 100%;
+}
+
+#form-user input,
+select {
   width: 49%;
   flex-grow: 1;
-  border-radius: 3px;  
+  border-radius: 3px;
   padding: 8px;
   margin: 3px;
   border-style: none;
 }
 
 #studies-container {
-  display: flex;
+  display: flex; 
+}
+
+#studies-container p {
+  font-size: 20px;
+  margin-bottom: 8px; 
+  justify-content: space-between;
 }
 
 #family {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: wrap column;
+  flex-basis: 100%; 
+}
+
+#family label{
+  margin: 4px;
 }
 
 #learn-content {
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  flex-wrap: wrap;
-  flex-basis: 200px;
-  margin: 0px 50px;
+  flex-wrap: wrap;   
+  margin-left: 10px;
+}
+
+#learn-content label {
+  display: flex;
+  width: 100px;
 }
 
 #textarea {
