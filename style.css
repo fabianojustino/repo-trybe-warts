@@ -16,6 +16,8 @@
 
 h1 {
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 h2 {
@@ -139,6 +141,8 @@ hr {
   width: 100%;
   background-color: rgb(79, 67, 161);
   margin-top: 8px;
+  color:rgb(231, 236, 239);
+  font-size: 20px;
 }
 
 #trybewarts-forms-logo {
