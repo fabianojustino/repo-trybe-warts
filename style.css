@@ -39,7 +39,7 @@ button {
 }
 
 .trybewarts-login button {
-  background-color: slateblue;
+  background-color: rgb(79, 67, 161);
   color: white;
 }
 
@@ -86,28 +86,28 @@ select {
 }
 
 #studies-container {
-  display: flex; 
+  display: flex;
 }
 
 #studies-container p {
   font-size: 20px;
-  margin-bottom: 8px; 
+  margin-bottom: 8px;
   justify-content: space-between;
 }
 
 #family {
   display: flex;
   flex-flow: wrap column;
-  flex-basis: 100%; 
+  flex-basis: 100%;
 }
 
-#family label{
+#family label {
   margin: 4px;
 }
 
 #learn-content {
   display: flex;
-  flex-wrap: wrap;   
+  flex-wrap: wrap;
   margin-left: 10px;
 }
 
@@ -116,23 +116,43 @@ select {
   width: 100px;
 }
 
-
-#avaluation{
+#avaluation {
   display: flex;
-  flex-grow: 1; 
+  flex-grow: 1;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
 #textarea {
+  display: inline;  
+}
+
+#commentary {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 50%;
+  width: 100%;  
+}
+ 
+#agreement-box{
+display: flex;
+flex-direction: column;
+}
+
+#agreement-box button{
+  width: 100%;
+  background-color: rgb(79, 67, 161);
+  margin-top: 8px;
 }
 
 #trybewarts-forms-logo {
-  display: flex;
   height: 500px;
   width: 100%;
+}
+
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(49, 49, 47);
+  padding: 20px;
+  color: #e7ecef;
 }

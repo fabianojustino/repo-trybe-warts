@@ -44,6 +44,8 @@ function enableButton(event) {
   let element = event.target;
   if (element.checked) {
     submitButton.removeAttribute("disabled");
+  }else{
+    submitButton.setAttribute('disabled','disabled')
   }
 }
 
