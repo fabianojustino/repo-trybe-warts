@@ -28,8 +28,8 @@ h2 {
   align-items: center;
 }
 
-.trybewarts-login input[type="text"],
-input[type="password"],
+.trybewarts-login input[type='text'],
+input[type='password'],
 button {
   margin-right: 5px;
   border-radius: 3px;
@@ -133,7 +133,7 @@ select {
   width: 100%;  
 }
  
-#agreement-box{
+#agreement-box {
 display: flex;
 flex-direction: column;
 }
@@ -151,10 +151,11 @@ flex-direction: column;
 }
 
 
-footer{
+footer {
   display: flex;
   justify-content: center;
   background-color: rgb(49, 49, 47);
   padding: 20px;
   color: #e7ecef;
+  font-size: 20px;
 }
