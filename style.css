@@ -116,6 +116,14 @@ select {
   width: 100px;
 }
 
+
+#avaluation{
+  display: flex;
+  flex-grow: 1; 
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
 #textarea {
   display: flex;
   flex-direction: column;
@@ -124,6 +132,7 @@ select {
 }
 
 #trybewarts-forms-logo {
+  display: flex;
   height: 500px;
   width: 100%;
 }
