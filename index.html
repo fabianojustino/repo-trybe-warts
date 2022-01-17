@@ -25,8 +25,8 @@
       <form id="evaluation-form" method="get">
         <h2>Formulário de Avaliação</h2>
         <section id="form-user">        
-          <input id="input-name" placeholder="Nome" type="text">
-          <input id="input-lastname" placeholder="Sobrenome" type="text">
+          <input id="input-name" placeholder="Nome" type="text" >
+          <input id="input-lastname" placeholder="Sobrenome" type="text" >
           <input id="input-email" placeholder="Email" type="email">
           <select name="house" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -53,12 +53,12 @@
           <div id="learn-content">
             
             <p id="label-content">Qual conteúdo você está com mais vontade de aprender?</p>
-            <label for="hofs"><input type="checkbox" name="hofs" id="hofs" value="HoFs">HoFs</label>
-            <label for="jest"><input type="checkbox" name="hofs" id="jest" value="Jest">Jest</label>
-            <label for="promises"><input type="checkbox" name="promises" id="promises" value="Promises">Promises</label>
-            <label for="react"><input type="checkbox" name="react" id="react" value="React">React</label>
-            <label for="sql"><input type="checkbox" name="sql" id="sql" value="SQL">SQL</label>
-            <label for="python"><input type="checkbox" name="python" id="python" value="Python">Python</label>
+            <label for="hofs"><input type="checkbox" name="hofs" id="hofs" value="HoFs" class="subject">HoFs</label>
+            <label for="jest"><input type="checkbox" name="hofs" id="jest" value="Jest" class="subject">Jest</label>
+            <label for="promises"><input type="checkbox" name="promises" id="promises" value="Promises" class="subject">Promises</label>
+            <label for="react"><input type="checkbox" name="react" id="react" value="React" class="subject">React</label>
+            <label for="sql"><input type="checkbox" name="sql" id="sql" value="SQL" class="subject">SQL</label>
+            <label for="python"><input type="checkbox" name="python" id="python" value="Python" class="subject">Python</label>
           </div>       
 
         </section>
@@ -70,10 +70,11 @@
           </label>
         </section>
 
-        <section id="textarea">
-          <label class="textarea" for="commentary">Deixe seu comentário:<br>
-            <textarea name="textarea" id="commentary" rows="10" maxlength="500" placeholder="500"></textarea>
+        <section id="section-textarea">
+          <label class="textarea" for="textarea">Deixe seu comentário:<br>
+            <textarea name="textarea" id="textarea" rows="10" maxlength="500" placeholder="500"></textarea>
           </label>
+          <p id='counter'>500</p>
         </section>
 
         <section id="agreement-box">
@@ -82,7 +83,14 @@
           <button id="submit-btn" type="submit" disabled>Enviar</button>
         </section>               
 
+        <section id='answers'>
+          <p id='p-nomeCompleto'> </p>
+          <p id='p-email'></p>
+          <p id='p-familia'></p>
+        </section>
+      
       </form>
+     
     </main>
 
 
