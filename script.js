@@ -5,8 +5,14 @@ const password = document.getElementById('password');
 const inputName = document.getElementById('input-name');
 const inputLastName = document.getElementById('input-lastname');
 const inputEmail = document.getElementById('input-email');
+const selectHouse = document.getElementById('house');
+const radioSubject = document.querySelectorAll('.subject');
 
-
+const pNomeSobrenome = document.getElementById('p-nomeCompleto');
+const pEmail = document.getElementById('p-email');
+const pEscola = document.getElementById('p-familia');
+const pMaterias = document.getElementById('p-materias');
+const pCasa = document.getElementById('p-casa');
 
 function checkin() {
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
@@ -50,7 +56,7 @@ function enableButton(event) {
   const element = event.target;
   if (element.checked) {
     submitButton.removeAttribute('disabled');
-    submitButton.style.color = 'white'
+    submitButton.style.color = 'white';
   } else {
     submitButton.setAttribute('disabled', 'disabled');
     submitButton.style.color = 'gray';
@@ -66,31 +72,25 @@ const qtde = 500;
 const showCharactersInserted = () => {
   const countCaracters = textarea.value.length;
   const total = qtde - countCaracters;
-  counter.innerText = total; 
+  counter.innerText = total;
 };
 
 textarea.addEventListener('keyup', showCharactersInserted);
 
-
-const cancelEventDefault=(event)=>{
+const cancelEventDefault = (event) => {
   event.preventDefault();
-
-  const pNomeSobrenome = document.getElementById('p-nomeCompleto');
   pNomeSobrenome.innerText = `Nome: ${inputName.value} ${inputLastName.value}`;
-
-  const pEmail = document.getElementById('p-email');
-  pEmail.innerText =`Email: ${inputEmail.value}`;
-
-  const radioFamily =  document.querySelector('input[name="family"]:checked');
-  const pEscola = document.getElementById('p-familia');
-  pEscola.innerText = `Familia: ${radioFamily.value}`;
- 
-
-    
-
-
-
-
-}
+  pEmail.innerText = `Email: ${inputEmail.value}`;
+  pCasa.innerText = `Casa: ${selectHouse.value}`;
+  const radioFamily = document.querySelector('input[name="family"]:checked');
+  pEscola.innerText = `Família: ${radioFamily.value}`;
+  const arraySubject = [];
+  for (let index = 0; index < radioSubject.length; index += 1) {
+    if (radioSubject[index].checked) {
+      arraySubject.push(radioSubject[index].value);
+    }
+  }
+  pMaterias.innerText = `Matérias: ${arraySubject.toString()}`;
+};
 
 submitButton.addEventListener('click', cancelEventDefault);
