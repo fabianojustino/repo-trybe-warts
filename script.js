@@ -13,6 +13,10 @@ const pEmail = document.getElementById('p-email');
 const pEscola = document.getElementById('p-familia');
 const pMaterias = document.getElementById('p-materias');
 const pCasa = document.getElementById('p-casa');
+const pAvaliacao = document.getElementById('p-avaliacao');
+const pComentario = document.getElementById('p-comentario');
+
+console.log(pAvaliacao);
 
 function checkin() {
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
@@ -77,20 +81,31 @@ const showCharactersInserted = () => {
 
 textarea.addEventListener('keyup', showCharactersInserted);
 
-const cancelEventDefault = (event) => {
-  event.preventDefault();
-  pNomeSobrenome.innerText = `Nome: ${inputName.value} ${inputLastName.value}`;
-  pEmail.innerText = `Email: ${inputEmail.value}`;
-  pCasa.innerText = `Casa: ${selectHouse.value}`;
-  const radioFamily = document.querySelector('input[name="family"]:checked');
-  pEscola.innerText = `Família: ${radioFamily.value}`;
+const createListSubject = () => {
   const arraySubject = [];
   for (let index = 0; index < radioSubject.length; index += 1) {
     if (radioSubject[index].checked) {
       arraySubject.push(radioSubject[index].value);
     }
   }
-  pMaterias.innerText = `Matérias: ${arraySubject.toString()}`;
+
+  return arraySubject.join(', ');
+};
+
+const cancelEventDefault = (event) => {
+  event.preventDefault();
+  pNomeSobrenome.innerText = `Nome: ${inputName.value} ${inputLastName.value}`;
+  pEmail.innerText = `Email: ${inputEmail.value}`;
+  pCasa.innerText = `Casa: ${selectHouse.value}`;
+
+  const radioFamily = document.querySelector('input[name="family"]:checked');
+  pEscola.innerText = `Família: ${radioFamily.value}`;
+  const listSubject = createListSubject();
+  pMaterias.innerText = `Matérias: ${listSubject.toString()}`;
+
+  const nota = document.querySelector('input[name="rate"]:checked');
+  pAvaliacao.innerText = `Avaliação: ${nota.value}`;
+  pComentario.innerText = 'Observações: Maaaaravilhoso';
 };
 
 submitButton.addEventListener('click', cancelEventDefault);
