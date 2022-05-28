@@ -5,7 +5,7 @@ O desafio aqui era seguir a risca todos os requisitos de alinhamentos e cores do
 
 ### [Habilidades](#habilidades)
 
-**Tivemos que lidar com diversas duas Soft Skills:**
+**Tivemos que lidar basicamente com duas Soft Skills:**
 
 - [Inteligência emocioal](#Inteligência-emocioal);
 - [Gerenciamento de conflitos](#Gerenciamento-de-conflitos).
